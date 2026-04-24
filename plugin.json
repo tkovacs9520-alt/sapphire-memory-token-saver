@@ -1,0 +1,29 @@
+{
+  "name": "memory_pipeline",
+  "version": "1.0.0",
+  "description": "Memory Pipeline \u2014 Log a condensed turn summary to the session buffer",
+  "author": "ai-toolmaker",
+  "default_enabled": true,
+  "capabilities": {
+    "tools": [
+      "tools/memory_pipeline.py"
+    ],
+    "settings": [
+      {
+        "key": "PIPELINE_SUMMARIZE_THRESHOLD",
+        "label": "Pipeline Summarize Threshold",
+        "default": 10,
+        "type": "number",
+        "help": "Number of turns before triggering a summarize reminder (default 10)"
+      },
+      {
+        "key": "PIPELINE_MAX_NOTE_LENGTH",
+        "label": "Pipeline Max Note Length",
+        "default": 500,
+        "type": "number",
+        "help": "Max character length for each turn note (default 500)"
+      }
+    ]
+  },
+  "icon": "\ud83e\udde0"
+}
